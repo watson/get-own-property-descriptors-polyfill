@@ -5,7 +5,8 @@ module.exports = Object.getOwnPropertyDescriptors || function getOwnPropertyDesc
     throw new TypeError('Cannot convert undefined or null to object')
   }
 
-  const descriptors = {}
+  const protoPropDescriptor = Object.getOwnPropertyDescriptor(obj, '__proto__')
+  const descriptors = protoPropDescriptor ? { ['__proto__']: protoPropDescriptor } : {}
 
   for (const name of Object.getOwnPropertyNames(obj)) {
     descriptors[name] = Object.getOwnPropertyDescriptor(obj, name)
