@@ -1,6 +1,6 @@
 {
   "name": "get-own-property-descriptors-polyfill",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A polyfill for Object.getOwnPropertyDescriptors",
   "main": "index.js",
   "dependencies": {},
@@ -30,5 +30,9 @@
   "bugs": {
     "url": "https://github.com/watson/get-own-property-descriptors-polyfill/issues"
   },
-  "homepage": "https://github.com/watson/get-own-property-descriptors-polyfill#readme"
+  "homepage": "https://github.com/watson/get-own-property-descriptors-polyfill#readme",
+  "coordinates": [
+    55.778266,
+    12.593002
+  ]
 }
